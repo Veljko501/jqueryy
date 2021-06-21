@@ -1,6 +1,6 @@
 <?php
 
-echo 'NEKA INFORMACIJA';
+echo 'OSMA GIMNAZIJA<br>Beograd;
 
 
 ?>
