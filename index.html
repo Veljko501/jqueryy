@@ -9,19 +9,24 @@
 	
 <body>
 	<center><h1>Naslov</h1></center>
-	<button>Dugme 1</button>
-
+	<button id = "prvo">Dugme 1</button>
+	<button id = "drugo">Dugme 2</button>
 
 </body>
 
 
 </html>
 <script>
-$(function(){
-	$('button').click(function(){
+$(document).ready(function(){
+	$('#prvo').click(function(){
 		$('h1').css('color','blue');
 		$('h1').css('font-size','70px');
 		$('h1').after('<h2>Veljko</h2>');
 	})
+	$('#drugo').click(function(){
+		$.get("lokacija/osma", function(data){
+			$('h2').html('<center>+data+</center>');
+	});
+});
 });
 </script>
