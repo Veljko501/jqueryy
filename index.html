@@ -22,10 +22,10 @@ $(document).ready(function(){
 		$('h1').css('color','blue');
 		$('h1').css('font-size','70px');
 		$('h1').after('<h2>Veljko</h2>');
-	})
+	});
 	$('#drugo').click(function(){
 		$.get("C:\xampp\htdocs\jqueryy\jqueryy\lokacija/osma.php", function(data){
-			$('h2').html('<center>+data+</center>');
+			$('h2').after('<center>+data+</center>');
 	});
 });
 });
